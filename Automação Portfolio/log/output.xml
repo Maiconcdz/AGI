@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231011 14:22:36.544" rpa="false" schemaversion="4">
+<suite id="s1" name="Agibank" source="C:\Automação Portfolio\robotPage\TestCases\Agibank.robot">
+<test id="s1-t1" name="Caso de teste 1: Funcionalidade LUPA" line="11">
+<kw name="Abrir Navegador" library="base" type="SETUP">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>keep_alive=True</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231011 14:22:36.729" level="INFO">Opening browser 'chrome' to base url 'https://blogdoagi.com.br/'.</msg>
+<status status="PASS" starttime="20231011 14:22:36.729" endtime="20231011 14:22:38.749"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231011 14:22:38.750" endtime="20231011 14:22:38.865"/>
+</kw>
+<status status="PASS" starttime="20231011 14:22:36.729" endtime="20231011 14:22:38.865"/>
+</kw>
+<kw name="Dado que eu tenha acessado o site XYZ" library="PK">
+<kw name="Selecionando Lupa" library="PA">
+<kw name="Click na lupa" library="PO">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<arg>search-open</arg>
+<arg>timeout=5</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231011 14:22:38.866" endtime="20231011 14:22:38.888"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>search-open</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231011 14:22:38.888" level="INFO">Clicking element 'search-open'.</msg>
+<status status="PASS" starttime="20231011 14:22:38.888" endtime="20231011 14:22:38.914"/>
+</kw>
+<status status="PASS" starttime="20231011 14:22:38.866" endtime="20231011 14:22:38.914"/>
+</kw>
+<status status="PASS" starttime="20231011 14:22:38.866" endtime="20231011 14:22:38.914"/>
+</kw>
+<status status="PASS" starttime="20231011 14:22:38.865" endtime="20231011 14:22:38.914"/>
+</kw>
+<kw name="Quando eu clicar na lupa" library="PK">
+<kw name="Clicando no pesquisar" library="PA">
+<kw name="Click no pesquisar" library="PO">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<arg>(//input[@value='Pesquisar'])[1]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231011 14:22:38.914" endtime="20231011 14:22:38.933"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>(//input[@value='Pesquisar'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231011 14:22:38.933" level="INFO">Clicking element '(//input[@value='Pesquisar'])[1]'.</msg>
+<status status="PASS" starttime="20231011 14:22:38.933" endtime="20231011 14:22:39.647"/>
+</kw>
+<status status="PASS" starttime="20231011 14:22:38.914" endtime="20231011 14:22:39.647"/>
+</kw>
+<status status="PASS" starttime="20231011 14:22:38.914" endtime="20231011 14:22:39.647"/>
+</kw>
+<status status="PASS" starttime="20231011 14:22:38.914" endtime="20231011 14:22:39.647"/>
+</kw>
+<kw name="Entao as pesquisas mais recentes aparecerão" library="PK">
+<kw name="Validando conteudo apos pesquisar" library="PA">
+<kw name="Validacao conteudo apos Pesquisar" library="PO">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<arg>blog-wrap</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20231011 14:22:39.648" endtime="20231011 14:22:39.662"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>blog-wrap</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231011 14:22:39.667" level="INFO">Current page contains element 'blog-wrap'.</msg>
+<status status="PASS" starttime="20231011 14:22:39.662" endtime="20231011 14:22:39.667"/>
+</kw>
+<status status="PASS" starttime="20231011 14:22:39.648" endtime="20231011 14:22:39.667"/>
+</kw>
+<status status="PASS" starttime="20231011 14:22:39.647" endtime="20231011 14:22:39.667"/>
+</kw>
+<status status="PASS" starttime="20231011 14:22:39.647" endtime="20231011 14:22:39.667"/>
+</kw>
+<status status="PASS" starttime="20231011 14:22:36.728" endtime="20231011 14:22:39.667"/>
+</test>
+<status status="PASS" starttime="20231011 14:22:36.546" endtime="20231011 14:22:39.668"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Agibank">Agibank</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

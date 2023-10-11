@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230527 13:13:08.188" rpa="false" schemaversion="3">
+<suite id="s1" name="Sirio Robot DSV" source="C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV">
+<suite id="s1-s1" name="robotPage" source="C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV\robotPage">
+<suite id="s1-s1-s1" name="TestCases" source="C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV\robotPage\TestCases">
+<suite id="s1-s1-s1-s1" name="LoginSirio" source="C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV\robotPage\TestCases\LoginSirio.robot">
+<test id="s1-s1-s1-s1-t1" name="Caso de Teste 02: Agendar Exame Offline para titular" line="14">
+<kw name="Abrir Navegador" library="base" type="SETUP">
+<kw name="Open Browser">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>keep_alive=True</arg>
+<msg timestamp="20230527 13:13:08.256" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20230527 13:13:08.256" endtime="20230527 13:13:08.256"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20230527 13:13:08.256" endtime="20230527 13:13:08.256"/>
+</kw>
+<status status="FAIL" starttime="20230527 13:13:08.240" endtime="20230527 13:13:08.256"/>
+</kw>
+<kw name="fechar navegador" library="base" type="TEARDOWN">
+<kw name="Close Browser">
+<msg timestamp="20230527 13:13:08.256" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20230527 13:13:08.256" endtime="20230527 13:13:08.256"/>
+</kw>
+<status status="FAIL" starttime="20230527 13:13:08.256" endtime="20230527 13:13:08.256">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" starttime="20230527 13:13:08.240" endtime="20230527 13:13:08.256">Setup failed:
+No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<status status="FAIL" starttime="20230527 13:13:08.209" endtime="20230527 13:13:08.256"/>
+</suite>
+<status status="FAIL" starttime="20230527 13:13:08.209" endtime="20230527 13:13:08.256"/>
+</suite>
+<status status="FAIL" starttime="20230527 13:13:08.209" endtime="20230527 13:13:08.256"/>
+</suite>
+<status status="FAIL" starttime="20230527 13:13:08.188" endtime="20230527 13:13:08.256"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Sirio Robot DSV">Sirio Robot DSV</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="robotPage">Sirio Robot DSV.robotPage</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TestCases">Sirio Robot DSV.robotPage.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="LoginSirio">Sirio Robot DSV.robotPage.TestCases.LoginSirio</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230527 13:13:08.225" level="ERROR">Error in file 'C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV\robotPage\PageObjects\PO.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV
+  C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\maico\AppData\Local\Programs\Python\Python311
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+<msg timestamp="20230527 13:13:08.240" level="ERROR">Error in file 'C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV\robotPage\ResourceCommon\base.robot' on line 2: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV
+  C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\maico\AppData\Local\Programs\Python\Python311
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+<msg timestamp="20230527 13:13:08.240" level="ERROR">Error in file 'C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV\robotPage\ResourceCommon\Environment\Env.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV
+  C:\Users\maico\Documents\Sirio Libanes\Sirio Old\Sirio Robot DSV
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\maico\AppData\Local\Programs\Python\Python311
+  C:\Users\maico\AppData\Local\Programs\Python\Python311\Lib\site-packages</msg>
+</errors>
+</robot>
